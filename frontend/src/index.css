@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=Lato:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-accent {
+  font-family: 'Caveat', cursive;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@layer base {
+  :root {
+    /* Dark attention-seeking theme */
+    --background: 220 6% 6%;      /* Very dark background */
+    --foreground: 0 0% 96%;       /* Light foreground */
+    --card: 220 6% 10%;
+    --card-foreground: 0 0% 96%;
+    --popover: 220 6% 12%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 38 96% 56%;        /* Bright amber/yellow */
+    --primary-foreground: 220 6% 6%;
+    --secondary: 38 96% 56%;      /* Bright amber */
+    --secondary-foreground: 220 6% 6%;
+    --muted: 220 6% 12%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 25 90% 50%;         /* Warm accent */
+    --accent-foreground: 220 6% 6%;
+    --destructive: 355 85% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 6% 14%;
+    --input: 220 6% 14%;
+    --ring: 355 85% 55%;
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--secondary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(0.9);
+}
+
+/* Selection */
+::selection {
+  background: hsl(var(--secondary));
+  color: white;
+}
+
+/* Focus states */
+*:focus-visible {
+  outline: 2px solid hsl(var(--secondary));
+  outline-offset: 2px;
+}
+
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+}

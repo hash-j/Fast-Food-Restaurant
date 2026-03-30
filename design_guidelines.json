@@ -1,0 +1,125 @@
+{
+  "design_system": {
+    "typography": {
+      "font_family": {
+        "heading": "Playfair Display, serif",
+        "body": "DM Sans, sans-serif",
+        "accent": "Caveat, cursive"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-tight",
+        "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-medium",
+        "body_large": "text-lg md:text-xl leading-relaxed",
+        "body_base": "text-base leading-relaxed text-muted-foreground",
+        "caption": "text-sm tracking-wide uppercase text-muted-foreground"
+      }
+    },
+    "colors": {
+      "theme": "light",
+      "palette": {
+        "background": "#F9F9F7",
+        "foreground": "#1A1A1A",
+        "primary": "#C5A065",
+        "primary_foreground": "#FFFFFF",
+        "secondary": "#F4F1EA",
+        "secondary_foreground": "#1A1A1A",
+        "muted": "#E5E5E5",
+        "muted_foreground": "#666666",
+        "accent": "#E76F51",
+        "border": "#E5E5E5"
+      }
+    },
+    "spacing": {
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_spacing": "py-20 md:py-32",
+      "element_spacing": "space-y-6"
+    },
+    "visual_enhancers": {
+      "radius": "rounded-none md:rounded-sm",
+      "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "borders": "border border-black/5",
+      "glassmorphism": "bg-white/80 backdrop-blur-md border-white/20"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#C5A065] text-white hover:bg-[#B08D55] rounded-full px-8 py-6 text-lg font-medium transition-all duration-300 hover:scale-105",
+      "secondary": "bg-transparent border border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white rounded-full px-8 py-6 text-lg transition-all duration-300",
+      "ghost": "text-[#1A1A1A] hover:text-[#C5A065] font-medium underline-offset-4 hover:underline"
+    },
+    "cards": {
+      "menu_item": "bg-white p-6 border border-black/5 hover:shadow-lg transition-all duration-300 group",
+      "feature": "bg-[#F4F1EA] p-8 md:p-12 text-center space-y-4"
+    },
+    "navigation": {
+      "wrapper": "fixed top-0 w-full z-50 transition-all duration-300",
+      "scrolled": "bg-white/90 backdrop-blur-md shadow-sm py-4",
+      "transparent": "bg-transparent py-6"
+    }
+  },
+  "layout_strategies": {
+    "hero": "Split layout: Left content (40%), Right visual (60%). Use organic shapes or overlapping elements. No full-width generic banners.",
+    "menu_grid": "Masonry or Bento grid. Not a simple list. Group items by category with distinct visual headers.",
+    "gallery": "Asymmetrical 'Tetris' grid. Mix landscape, portrait, and square images. Use whitespace.",
+    "footer": "Clean, minimal. Large typography for 'Contact'. 3-column layout."
+  },
+  "image_urls": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1661994215679-cde7c2c5c060?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwxfHxwYWtpc3RhbmklMjBmb29kJTIwdGFibGUlMjBzcHJlYWR8ZW58MHx8fHwxNzY5ODAxNzM2fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Elegant Pakistani food spread",
+      "usage": "Hero section main visual"
+    },
+    "about": {
+      "url": "https://images.unsplash.com/photo-1767418238663-d79db1fb7f78?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb3p5JTIwY2FmZSUyMGludGVyaW9yJTIwd2FybSUyMGxpZ2h0aW5nfGVufDB8fHx8MTc2OTgwMTcxNHww&ixlib=rb-4.1.0&q=85",
+      "alt": "Cozy cafe interior with warm lighting",
+      "usage": "About section or background"
+    },
+    "menu_highlights": [
+      {
+        "url": "https://images.unsplash.com/photo-1716535232842-d10da4eb33d5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxrYXJhaGklMjBjaGlja2VuJTIwd29rfGVufDB8fHx8MTc2OTgwMTc0M3ww&ixlib=rb-4.1.0&q=85",
+        "alt": "Chicken Karahi",
+        "category": "Specials"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1594266063697-304befca9629?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHw0fHxjaGlja2VuJTIwdGlra2ElMjBrZWJhYiUyMGJicSUyMHBsYXRlfGVufDB8fHx8MTc2OTgwMTcxNnww&ixlib=rb-4.1.0&q=85",
+        "alt": "BBQ Platter",
+        "category": "BBQ"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1618219877704-18411f61719d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwYnVyZ2VyJTIwZnJpZXMlMjB3b29kJTIwdGFibGV8ZW58MHx8fHwxNzY5ODAxNzIxfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Gourmet Burger",
+        "category": "Fast Food"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1677256205303-f52a060eef99?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwzfHxtYXNhbGElMjBjaGFpJTIwY3VwJTIwc3RlYW18ZW58MHx8fHwxNzY5ODAxNzQ4fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Steaming Chai",
+        "category": "Drinks"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use 'Playfair Display' for all Headings (h1-h3). Use 'DM Sans' for body text.",
+    "Implement a 'Smooth Scroll' behavior using CSS 'scroll-behavior: smooth'.",
+    "Do NOT use standard Bootstrap/Grid columns. Use the 'Bento' grid strategy defined in layout_strategies.",
+    "Ensure the 'Order Now' button is always visible (sticky header or floating action button on mobile).",
+    "The Menu page must be categorized. Do not dump all items in one list.",
+    "Use the provided image URLs. Do not use placeholders.",
+    "For the 'Contact' section, embed the Google Map iframe with a grayscale filter to match the elegant theme.",
+    "Ensure 'Cash Only' is highlighted prominently near the menu or footer.",
+    "Create a 'Services' section using icons (use lucide-react) for Delivery, Takeout, Dine-in.",
+    "Use 'framer-motion' for subtle entrance animations (fade-up) on scroll."
+  ],
+  "universal_guidelines": {
+    "do_not_use": [
+      "Gradients for text",
+      "Default blue links",
+      "Rounded-xl borders (stick to rounded-sm or rounded-full for buttons)",
+      "Inter font for headings"
+    ],
+    "accessibility": {
+      "contrast": "Ensure text is #1A1A1A on light backgrounds.",
+      "focus_states": "Visible ring on focus for all interactive elements."
+    }
+  }
+}
