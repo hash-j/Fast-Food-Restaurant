@@ -63,8 +63,8 @@ A modern, responsive fast-food restaurant website built with React and FastAPI.
    ```
 
 4. **Open your browser**
-   - Frontend: http://localhost:3000
-   - Backend API: http://localhost:8000
+   - Frontend: https://fast-food-restaurant-chi.vercel.app
+   - Backend API: https://fast-food-restaurant-1-hcjt.onrender.com
 
 ## 📁 Project Structure
 
