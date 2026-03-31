@@ -51,13 +51,13 @@ export default function Contact() {
               </h2>
 
               {/* Phone */}
-              <div className="bg-white p-6 mb-4 border border-black/5 hover:shadow-lg transition-all duration-300">
+              <div className="bg-card p-6 mb-4 border border-border hover:shadow-lg transition-all duration-300">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-white" />
+                    <Phone className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-1" style={{ fontFamily: 'Syne, sans-serif' }}>Phone</h3>
+                    <h3 className="text-lg font-medium mb-1 text-foreground" style={{ fontFamily: 'Syne, sans-serif' }}>Phone</h3>
                     <a
                       href="tel:0321-4967022"
                       className="text-primary text-xl font-semibold hover:underline"
@@ -71,13 +71,13 @@ export default function Contact() {
               </div>
 
               {/* Address */}
-              <div className="bg-white p-6 mb-4 border border-black/5 hover:shadow-lg transition-all duration-300">
+              <div className="bg-card p-6 mb-4 border border-border hover:shadow-lg transition-all duration-300">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-white" />
+                    <MapPin className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-1" style={{ fontFamily: 'Syne, sans-serif' }}>Location</h3>
+                    <h3 className="text-lg font-medium mb-1 text-foreground" style={{ fontFamily: 'Syne, sans-serif' }}>Location</h3>
                     <a
                       href="https://maps.app.goo.gl/o13pHWE2XrSSzdZi8"
                       target="_blank"
@@ -93,13 +93,13 @@ export default function Contact() {
               </div>
 
               {/* Hours */}
-              <div className="bg-white p-6 mb-4 border border-black/5 hover:shadow-lg transition-all duration-300">
+              <div className="bg-card p-6 mb-4 border border-border hover:shadow-lg transition-all duration-300">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-5 h-5 text-white" />
+                    <Clock className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-1" style={{ fontFamily: 'Syne, sans-serif' }}>Hours</h3>
+                    <h3 className="text-lg font-medium mb-1 text-foreground" style={{ fontFamily: 'Syne, sans-serif' }}>Hours</h3>
                     <p className="text-foreground font-semibold">Open Daily</p>
                     <p className="text-secondary text-lg font-semibold">12:00 PM – 2:00 AM</p>
                   </div>
@@ -107,14 +107,14 @@ export default function Contact() {
               </div>
 
               {/* Social Media */}
-              <div className="bg-white p-6 border border-black/5 hover:shadow-lg transition-all duration-300">
-                <h3 className="text-lg font-medium mb-4" style={{ fontFamily: 'Syne, sans-serif' }}>Follow Us</h3>
+              <div className="bg-card p-6 border border-border hover:shadow-lg transition-all duration-300">
+                <h3 className="text-lg font-medium mb-4 text-foreground" style={{ fontFamily: 'Syne, sans-serif' }}>Follow Us</h3>
                 <div className="flex gap-4">
                   <a
                     href="https://www.facebook.com/61558558295303"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-background rounded-full flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300 text-foreground"
+                    className="w-12 h-12 bg-muted rounded-full flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 text-foreground"
                     data-testid="contact-facebook"
                     aria-label="Facebook"
                   >
@@ -124,7 +124,7 @@ export default function Contact() {
                     href="https://x.com/share?url=https%3A%2F%2Fshare.google%2FSso0hdieswkptv6GK"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-background rounded-full flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300 text-foreground"
+                    className="w-12 h-12 bg-muted rounded-full flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 text-foreground"
                     data-testid="contact-twitter"
                     aria-label="Twitter"
                   >
@@ -144,7 +144,7 @@ export default function Contact() {
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-8" style={{ fontFamily: 'Syne, sans-serif' }}>
                 Find Us
               </h2>
-              <div className="relative bg-white border border-black/5 overflow-hidden">
+              <div className="relative bg-card border border-border overflow-hidden">
                 <div className="map-grayscale">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.747085456789!2d74.3!3d31.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDMwJzAwLjAiTiA3NMKwMTgnMDAuMCJF!5e0!3m2!1sen!2s!4v1234567890"
@@ -200,7 +200,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-xl mx-auto"
           >
-            <div className="bg-white border border-black/5 overflow-hidden">
+            <div className="bg-card border border-border overflow-hidden">
               {businessHours.map((item, index) => (
                 <div
                   key={item.day}
