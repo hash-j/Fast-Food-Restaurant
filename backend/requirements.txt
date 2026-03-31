@@ -27,4 +27,6 @@ typer>=0.9.0
 
 # PostgreSQL / Neon support
 SQLAlchemy>=2.0.0
-psycopg[binary]==3.3.0
+psycopg2-binary==2.9.11
+# psycopg3 is not needed for psycopg2 driver URL
+# psycopg[binary]==3.3.0
